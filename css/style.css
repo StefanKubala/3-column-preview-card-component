@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 90rem;
+    height: 50rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card {
+    width: 33.333%;
+    padding: 5rem;
+}
+
+.first {
+    background-color: #e38826;
+}
+
+.second {
+    background-color: #006970;
+}
+
+.third {
+    background-color: #004241;
+}
+
+.main-heading {
+    font-size: 4.3rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Big Shoulders Display', cursive;;
+    margin: 2.5rem 0;
+}
+
+.container p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: #fff;
+    opacity: .7;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: solid 2px white;
+    transition: all .2s;
+    margin-top: 8rem;
+}
+
+.btn-sedan {
+    color: #e38826;
+}
+
+.btn-sedan:hover,
+.btn-sedan:active {
+    background-color: #e38826;
+    color: #fff;
+}
+
+.btn-suv {
+    color: #006970;
+}
+
+.btn-suv:hover,
+.btn-suv:active {
+    background-color: #006970;
+    color: #fff;
+}
+
+.btn-luxury {
+    color: #004241;
+}
+
+.btn-luxury:hover,
+.btn-luxury:active {
+    background-color: #004241;
+    color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+
+    body {
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        margin: 4rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .btn {
+        margin-top: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        margin: 6rem 3rem;
+    }
+}
